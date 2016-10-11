@@ -11,17 +11,21 @@
       array('Twitter' , '<a
                   href="https://twitter.com/">https://twitter.com/</a> ')
   );
-
-  echo '<table border="1">';
-  echo '<tr><th>Name</th><th>Link</th></tr>';
-  foreach( $links as $link )
+  function takes_array($links)
   {
-	 echo '<tr>';
-	 foreach( $link as $key )
-	 {
-		 echo '<td>'.$key.'</td>';
+  	 echo '<table border="1">';
+	 echo '<tr><th>Name</th><th>Link</th></tr>';
+	 foreach( $links as $link )
+ 	 {
+		 echo '<tr>';
+		 foreach( $link as $key )
+		 {
+			 echo '<td>'.$key.'</td>';
+		 }
+		 echo '</tr>';
 	 }
-	 echo '</tr>';
- }
- echo '</table>';
+	 echo '</table>';
+} 
+echo takes_array($links)
+
  ?>
