@@ -1,5 +1,6 @@
 <?php
   $links = array(
+      array('Name', 'Link'),
       array('Google' , '<a
       href="https://www.google.com/">https://www.google.com/</a> ' ),
       array('Yahoo' , '<a
@@ -14,7 +15,7 @@
   function takes_array($links)
   {
   	 echo '<table border="1">';
-	 echo '<tr><th>Name</th><th>Link</th></tr>';
+	 //echo '<tr><th>Name</th><th>Link</th></tr>';
 	 foreach( $links as $link )
  	 {
 		 echo '<tr>';
